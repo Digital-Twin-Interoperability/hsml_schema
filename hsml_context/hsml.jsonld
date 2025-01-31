@@ -1,0 +1,1209 @@
+{
+    "@context": {
+      "@version": 1.1,
+      "@vocab": "http://example.com/hsml#",
+      "schema": "https://schema.org/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      
+      "additionalType": "schema:additionalType",
+      "alternateName": "schema:alternateName",
+      "description": "schema:description",
+      "disambiguatingDescription": "schema:disambiguatingDescription",
+      "identifier": "schema:identifier",
+      "image": "schema:image",
+      "mainEntityOfPage": "schema:mainEntityOfPage",
+      "name": "schema:name",
+      "potentialAction": "schema:potentialAction",
+      "sameAs": "schema:sameAs",
+      "subjectOf": "schema:subjectOf",
+      "url": "schema:url",
+
+      "actionProcess": "schema:actionProcess",
+      "endTime": "schema:endTime",
+      "error":"schema:error",
+      "instrument":"schema:instrument", 
+      "location":"schema:location", 
+      "object":"schema:object", 
+      "participant":"schema:participant", 
+      "provider":"schema:provider", 
+      "result":"schema:result", 
+      "startTime":"schema:startTime", 
+      "target":"schema:target", 
+
+      "areaServed":"schema:areaServed", 
+      "audience":"schema:audience", 
+      "availableChannel":"schema:availableChannel", 
+      "about":"schema:about", 
+      "creator":"schema:creator", 
+      "hasPart":"schema:hasPart", 
+      "inLanguage":"schema:inLanguage", 
+      "isPartOf":"schema:isPartOf", 
+      "mainEntity":"schema:mainEntity", 
+      "contentType":"schema:contentType", 
+
+      "category":"schema:category", 
+      "isRelatedTo":"schema:isRelatedTo", 
+      "offers":"schema:offers", 
+      "serviceOutput":"schema:serviceOutput", 
+      "serviceType":"schema:serviceType", 
+      "termsOfService":"schema:termsOfService",
+
+      "issuedBy":"schema:issuedBy",
+      "issuedThrough":"schema:issuedThrough",
+      "permitAudience":"schema:permitAudience",
+      "validFor":"schema:validFor",
+      "validFrom":"schema:validFrom",
+      "validIn":"schema:validIn",
+      "validUntil":"schema:validUntil",
+
+      "abstract":"schema:abstract",
+      "accountablePerson":"schema:accountablePerson",
+      "archivedAt":"schema:archivedAt",
+      "associatedMedia":"schema:associatedMedia",
+      "author":"schema:author",
+      "comment":"schema:comment",
+      "conditionsOfAccess":"schema:conditionsOfAccess",
+      "contentLocation":"schema:contentLocation",
+      "contentReferenceTime":"schema:contentReferenceTime",
+      "contributor":"schema:contributor",
+      "copyrightHolder":"schema:copyrightHolder",
+      "copyrightNotice":"schema:copyrightNotice",
+      "copyrightYear":"schema:copyrightYear",
+      "correction":"schema:correction",
+      "countryOfOrigin":"schema:countryOfOrigin",
+      "creditText":"schema:creditText",
+      "dateCreated": "schema:dateCreated",
+      "dateModified": "schema:dateModified",
+      "datePublished": "schema:datePublished",
+      "digitalSourceType":"schema:digitalSourceType",
+      "editor":"schema:editor",
+      "encoding":"schema:encoding",
+      "encodingFormat":"schema:encodingFormat",
+      "expires":"schema:expires",
+      "funder":"schema:funder",
+      "funding":"schema:funding",
+      "isBasedOn":"schema:isBasedOn",
+      "keywords":"schema:keywords",
+      "license":"schema:license",
+      "locationCreated":"schema:locationCreated",
+      "maintainer":"schema:maintainer",
+      "material":"schema:material",
+      "materialExtent":"schema:materialExtent",
+      "position":"schema:position",
+      "producer":"schema:producer",
+      "publisher":"schema:publisher",
+      "recordedAt":"schema:recordedAt",
+      "releasedEvent":"schema:releasedEvent",
+      "schemaVersion":"schema:schemaVersion",
+      "sdDatePublished":"schema:sdDatePublished",
+      "sdLicense":"schema:sdLicense",
+      "sdPublisher":"schema:sdPublisher",
+      "size":"schema:size",
+      "sourceOrganization":"schema:sourceOrganization",
+      "spatial":"schema:spatial",
+      "spatialCoverage":"schema:spatialCoverage",
+      "sponsor":"schema:sponsor",
+      "temporal":"schema:temporal",
+      "temporalCoverage":"schema:temporalCoverage",
+      "text":"schema:text",
+      "timeRequired":"schema:timeRequired",
+      "usageInfo":"schema:usageInfo",
+      "version":"schema:version", 
+      "video":"schema:video",
+      "additionalProperty": "schema:additionalProperty",
+
+      "isResizable":"schema:isResizable",
+      "associatedArticle":"schema:associatedArticle",
+      "bitrate":"schema:bitrate",
+      "contentSize":"schema:contentSize",
+      "contentUrl": "schema:contentUrl",
+      "duration":"schema:duration",
+      "embedUrl":"schema:embedUrl",
+      "height":"schema:height",
+      "ineligibleRegion":"schema:ineligibleRegion",
+      "interpretedAsClaim":"schema:interpretedAsClaim",
+      "playerType":"schema:playerType",
+      "productionCompany":"schema:productionCompany",
+      "regionsAllowed":"schema:regionsAllowed",
+      "requiresSubscription":"schema:requiresSubscription",
+      "uploadDate":"schema:uploadDate",
+      "width":"schema:width",
+      "applicationCategory":"schema:applicationCategory",
+      "applicationSubCategory":"schema:applicationSubCategory",
+      "availableOnDevice":"schema:availableOnDevice",
+      "downloadUrl":"schema:downloadUrl",
+      "featureList":"schema:featureList",
+      "memoryRequirements":"schema:memoryRequirements",
+      "operatingSystem":"schema:operatingSystem",
+      "processorRequirements":"schema:processorRequirements",
+      "softwareRequirements":"schema:softwareRequirements",
+      "storageRequirements":"schema:storageRequirements",
+      "supportingData":"schema:supportingData",
+
+      "address":"schema:address",
+      "addressCountry":"schema:addressCountry",
+      "box":"schema:box",
+      "circle":"schema:circle",
+      "elevation":"schema:elevation",
+      "line":"schema:line",
+      "polygon":"schema:polygon",
+      "postalCode":"schema:postalCode",
+
+      "inDefinedTermSet":"schema:inDefinedTermSet",
+      "termCode":"schema:termCode",
+
+      "acceptedPaymentMethod":"schema:acceptedPaymentMethod",
+      "actionableFeedbackPolicy":"schema:actionableFeedbackPolicy",
+      "agentInteractionStatistic":"schema:agentInteractionStatistic",
+      "aggregateRating":"schema:aggregateRating",
+      "alumni":"schema:alumni",
+      "award":"schema:award",
+      "brand":"schema:brand",
+      "contactPoint":"schema:contactPoint",
+      "correctionsPolicy":"schema:correctionsPolicy",
+      "department":"schema:department",
+      "dissolutionDate":"schema:dissolutionDate",
+      "diversityPolicy":"schema:diversityPolicy",
+      "diversityStaffingReport":"schema:diversityStaffingReport",
+      "duns":"schema:duns",
+      "email":"schema:email",
+      "employee":"schema:employee",
+      "ethicsPolicy":"schema:ethicsPolicy",
+      "event":"schema:event",
+      "faxNumber":"schema:faxNumber",
+      "founder":"schema:founder",
+      "globalLocationNumber":"schema:globalLocationNumber",
+      "hasCertification":"schema:hasCertification",
+      "hasCredential":"schema:hasCredential",
+      "hasGS1DigitalLink":"schema:hasGS1DigitalLink",
+      "hasMemberProgram":"schema:hasMemberProgram",
+      "hasMerchantReturnPolicy":"schema:hasMerchantReturnPolicy",
+      "hasOfferCatalog":"schema:hasOfferCatalog",
+      "hasPOS":"schema:hasPOS",
+      "interactionStatistic":"schema:interactionStatistic",
+      "isicV4":"schema:isicV4",
+      "iso6523Code":"schema:iso6523Code",
+      "knowsAbout":"schema:knowsAbout",
+      "knowsLanguage":"schema:knowsLanguage",
+      "legalName":"schema:legalName",
+      "leiCode":"schema:leiCode",
+      "logo":"schema:logo",
+      "makesOffer":"schema:makesOffer",
+      "member":"schema:member",
+      "memberOf":"schema:memberOf",
+      "naics":"schema:naics",
+      "nonprofitStatus":"schema:nonprofitStatus",
+      "numberOfEmployees":"schema:numberOfEmployees",
+      "ownershipFundingInfo":"schema:ownershipFundingInfo",
+      "owns":"schema:owns",
+      "parentOrganization":"schema:parentOrganization",
+      "publishingPrinciples":"schema:publishingPrinciples",
+      "review":"schema:review",
+      "seeks":"schema:seeks",
+      "skills":"schema:skills",
+      "slogan":"schema:slogan",
+      "subOrganization":"schema:subOrganization",
+      "taxID":"schema:taxID",
+      "telephone":"schema:telephone",
+      "unnamedSourcesPolicy":"schema:unnamedSourcesPolicy",
+      "vatID":"schema:vatID",
+
+      "additionalName":"schema:additionalName",
+      "affiliation":"schema:affiliation",
+      "alumniOf":"schema:alumniOf",
+      "birthDate":"schema:birthDate",
+      "birthPlace":"schema:birthPlace",
+      "callSign":"schema:callSign",
+      "children":"schema:children",
+      "colleague":"schema:colleague",
+      "deathDate":"schema:deathDate",
+      "deathPlace":"schema:deathPlace",
+      "familyName":"schema:familyName",
+      "follows":"schema:follows",
+      "gender":"schema:gender",
+      "givenName":"schema:givenName",
+      "hasOccupation":"schema:hasOccupation",
+      "homeLocation":"schema:homeLocation",
+      "honorificPrefix":"schema:honorificPrefix",
+      "honorificSuffix":"schema:honorificSuffix",
+      "jobTitle":"schema:jobTitle",
+      "knows":"schema:knows",
+      "nationality":"schema:nationality",
+      "netWorth":"schema:netWorth",
+      "parent":"schema:parent",
+      "performerIn":"schema:performerIn",
+      "relatedTo":"schema:relatedTo",
+      "sibling":"schema:sibling",
+      "spouse":"schema:spouse",
+      "weight":"schema:weight",
+      "workLocation":"schema:workLocation",
+      "worksFor":"schema:worksFor",
+
+      "color":"schema:color",
+      "depth":"schema:depth",
+      "hasEnergyConsumptionDetails":"schema:hasEnergyConsumptionDetails",
+      "hasMeasurement":"schema:hasMeasurement",
+      "manufacturer":"schema:manufacturer",
+      "productID":"schema:productID",
+      "productionDate":"schema:productionDate",
+      "purchaseDate":"schema:purchaseDate",
+      "releaseDate":"schema:releaseDate",
+
+      "byDay":"schema:byDay",
+      "byMonth":"schema:byMonth",
+      "byMonthDay":"schema:byMonthDay",
+      "byMonthWeek":"schema:byMonthWeek",
+      "endDate":"schema:endDate",
+      "exceptDate":"schema:exceptDate",
+      "repeatCount":"schema:repeatCount",
+      "repeatFrequency":"schema:repeatFrequency",
+      "scheduleTimezone":"schema:scheduleTimezone",
+      "startDate":"schema:startDate",
+
+      "propertyID": "schema:propertyID",
+      "value": "schema:value"
+    
+    },
+    "@graph": [
+      {
+        "@id": "http://example.com/hsml#Entity",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "The base item in the Spatial Web Ontology.",
+        "rdfs:label": "Entity"
+      },
+      {
+        "@id": "http://example.com/hsml#Activity",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A single action or partially ordered set of actions performed by an Agent.",
+        "rdfs:label": "Activity",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Channel",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A Channel contains HSML messages that relate to an HSML Activity.",
+        "rdfs:label": "Channel",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Contract",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A binding agreement between two parties, especially enforceable by law, or a similar internal agreement wholly within an organization.",
+        "rdfs:label": "Contract",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Credential",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A set of one or more claims made by a Domain. Examples of claims include identity of a Domain, membership in a Domain, or ability of a Domain to perform an Activity.",
+        "rdfs:label": "Credential",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Domain",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A sphere of knowledge, influence, or Activity. A Domain retains its identity over time even though its states and relations may change. There are different Domain types, like Agent or Person.",
+        "rdfs:label": "Domain",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Agent",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "An individual domain with active states and agency. An Agent is an Entity that senses, responds, and maintains a model of its environment, while performing actions to achieve its goals.",
+        "rdfs:label": "Agent",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Geographic",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A Domain implicitly or explicitly associated with a location.",
+        "rdfs:label": "Geographic",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Concept",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A type of domain representing intangible concepts and abstract ideas shared by a community of users.",
+        "rdfs:label": "Concept",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Organization",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A type of domain pertaining to membership within an entity. It can be mapped to schema:Organization.",
+        "rdfs:label": "Organization",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "owl:equivalentClass": "schema:Organization"
+      },
+      {
+        "@id": "http://example.com/hsml#Person",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A special subtype of agent maintaining a self-sovereign identity. It can be mapped to schema:Person.",
+        "rdfs:label": "Person",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "owl:equivalentClass": "schema:Person"
+      },
+      {
+        "@id": "http://example.com/hsml#Thing",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "A type of Domain used to represent bounded items without agency. These are objects that have no goals, but that can be used or owned by other Agents to sense or perform an Activity. For example, a camera.",
+        "rdfs:label": "Thing",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Domain"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Hyperspace",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "It represents an abstract space containing multiple domains or types of spaces. Hyperspace accounts for both physical and virtual spaces, digital twins, and Internet of Things (IoT) Entities. ",
+        "rdfs:label": "Hyperspace",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "http://example.com/hsml#Time",
+        "@type": "rdfs:Class",
+        "rdfs:comment": "It may be a dimension in spacetime, a length of a duration, a trajectory, related to a clock. When experienced by an Agent, Time has a past, present, and future. Time is related to Hyperspace or to Activities.",
+        "rdfs:label": "Time",
+        "rdfs:subClassOf": {
+          "@id": "http://example.com/hsml#Entity"
+        }
+      },
+      {
+        "@id": "schema:creator",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "http://example.com/hsml#linkedTo",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Entity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Entity"
+        },
+        "rdfs:comment": "The schema of other entities to which this entity is connected.",
+        "rdfs:label": "linkedTo"
+      },
+      {
+        "@id": "http://example.com/hsml#swid",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Entity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/URL"
+        },
+        "rdfs:comment": "A unique identifier for objects in the Spatial Web. Currently, a DID:key generated for each Entity.",
+        "rdfs:label": "swid"
+      },
+      {
+        "@id": "http://example.com/hsml#activityHasInstance",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "rdfs:comment": "Used to indicate smaller activities that are instances of the current activity.",
+        "rdfs:label": "activityHasInstance"
+      },
+      {
+        "@id": "http://example.com/hsml#activityIsInstanceOf",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "rdfs:comment": "Used to indicate a greater activity of which this activity is an instance of.",
+        "rdfs:label": "activityIsInstanceOf"
+      },
+      {
+        "@id": "http://example.com/hsml#activityStatus",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "Indicates the current status or disposition of the activity. For example, planned, in progress, completed or failed.",
+        "rdfs:label": "activityStatus"
+      },
+      {
+        "@id": "http://example.com/hsml#actor",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          },        
+          {
+            "@id": "http://example.com/hsml#Organization"
+          }
+        ],
+        "rdfs:comment": "The direct performer or driver of the action (animate or inanimate).",
+        "rdfs:label": "actor"
+      },      
+      {
+        "@id": "http://example.com/hsml#collaborator",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "rdfs:comment": "The domain (usually an Agent) with whose help this activity is performed.",
+        "rdfs:label": "collaborator"
+      },      
+      {
+        "@id": "http://example.com/hsml#condition",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "It can be an initial condition (defined using variables), intermediate conditions or end conditions that define the activity.",
+        "rdfs:label": "condition"
+      },      
+      {
+        "@id": "http://example.com/hsml#goal",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "The desired state or outcome of the Activity.",
+        "rdfs:label": "goal"
+      },      
+      {
+        "@id": "http://example.com/hsml#hasContract",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "rdfs:comment": "The contract under which the activity is performed. ",
+        "rdfs:label": "hasContract"
+      },      
+      {
+        "@id": "http://example.com/hsml#monitoredBy",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Person"
+          },        
+          {
+            "@id": "http://example.com/hsml#Organization"
+          }
+        ],
+        "rdfs:comment": "Organization or person in charge of monitoring and overseeing the Activity.",
+        "rdfs:label": "monitoredBy"
+      },      
+      {
+        "@id": "http://example.com/hsml#openVariables",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "Variables that define the activity performed.",
+        "rdfs:label": "openVariables"
+      },      
+      {
+        "@id": "http://example.com/hsml#performedOn",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ],
+        "rdfs:comment": "The domain (whether geographic, a thing or an agent) on or in which the activity is performed.",
+        "rdfs:label": "performedOn"
+      },     
+      {
+        "@id": "http://example.com/hsml#linkedActivity",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Agent"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "rdfs:comment": "Refers to the specific activity or task that the agent is associated with, responsible for, or engaged in.",
+        "rdfs:label": "linkedActivity"
+      },
+      {
+        "@id": "http://example.com/hsml#mainGoal",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Agent"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "Describes the primary objective, aim, or goal that the agent is intended to achieve.",
+        "rdfs:label": "mainGoal"
+      },
+      {
+        "@id": "http://example.com/hsml#access",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Entity"
+        },
+        "rdfs:comment": "The list of entities (e.g., agents, organizations) who have access to the channel.",
+        "rdfs:label": "access"
+      },
+      {
+        "@id": "http://example.com/hsml#channelStatus",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "The current status of the channel (e.g, active, inactive).",
+        "rdfs:label": "channelStatus"
+      },
+      {
+        "@id": "http://example.com/hsml#durationChannel",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Time"
+        },
+        "rdfs:comment": "The duration for which the Channel is active or available.",
+        "rdfs:label": "durationChannel"
+      },
+      {
+        "@id": "http://example.com/hsml#messageCount",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "rdfs:comment": "The total number of messages sent inside the Channel.",
+        "rdfs:label": "messageCount"
+      },
+      {
+        "@id": "http://example.com/hsml#parentChannel",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "rdfs:comment": "Indicates if the channel is a sub-channel of another channel.",
+        "rdfs:label": "parentChannel"
+      },
+      {
+        "@id": "http://example.com/hsml#relatedActivity",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "rdfs:comment": "The activity or activities that the channel is related to.",
+        "rdfs:label": "relatedActivity"
+      },
+      {
+        "@id": "http://example.com/hsml#streamData",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Channel"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://schema.org/Text"
+          },
+          {
+            "@id": "http://schema.org/URL"
+          }
+        ],
+        "rdfs:comment": "The real-time or recorded data associated with a Channel, capturing information about Activities, Credentials, messages, interactions, or shared content over time.",
+        "rdfs:label": "streamData"
+      },
+      {
+        "@id": "http://example.com/hsml#agreement",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "Description of the contract, describing the clauses and conditions between the signing parties.",
+        "rdfs:label": "agreement"
+      },
+      {
+        "@id": "http://example.com/hsml#contractStatus",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "For tracking contract statuses like Requested, Executed, etc.",
+        "rdfs:label": "contractStatus"
+      },
+      {
+        "@id": "http://example.com/hsml#forActivity",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "rdfs:comment": "The activity for which this contract was written.",
+        "rdfs:label": "forActivity"
+      },
+      {
+        "@id": "http://example.com/hsml#signedBy",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },
+          {
+            "@id": "http://example.com/hsml#Person"
+          }        
+        ],
+        "rdfs:comment": "Parties involved in the Contract.",
+        "rdfs:label": "signedBy"
+      },
+      {
+        "@id": "http://example.com/hsml#transferRightsTo",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Contract"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ],
+        "rdfs:comment": "If the contract involves the transfer of rights for a particular agent, geographic domain, or another kind of object.",
+        "rdfs:label": "transferRightsTo"
+      },
+      {
+        "@id": "http://example.com/hsml#accessAuthorization",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          },
+          {
+            "@id": "http://example.com/hsml#Organization"
+          }
+        ],
+        "rdfs:comment": "Identifies the person, organization, or domain that is authorized to access a specific domain, system, or resource.",
+        "rdfs:label": "accessAuthorization"
+      },
+      {
+        "@id": "http://example.com/hsml#accessGrant",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "https://schema.org/Boolean"
+          },        
+          {
+            "@id": "https://schema.org/Text"
+          }
+        ],
+        "rdfs:comment": "Indicates whether access has been granted (true/false) or describes the access status (e.g., Pending, Approved).",
+        "rdfs:label": "accessGrant"
+      },
+      {
+        "@id": "http://example.com/hsml#accessLevel",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": {
+          "@id": "https://schema.org/Text"
+        },
+        "rdfs:comment": "Describes the level or scope of access granted (e.g., Read-only, Admin, Full Control).",
+        "rdfs:label": "accessLevel"
+      },
+      {
+        "@id": "http://example.com/hsml#authorizedForDomain",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ],
+        "rdfs:comment": "Specifies the agent, system, or environment for which the Person or Organization is authorized. For example, to a lunar surface model, a rover, or a camera.",
+        "rdfs:label": "authorizedForDomain"
+      },
+      {
+        "@id": "http://example.com/hsml#credentialCategory",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": {
+          "@id": "https://schema.org/Text"
+        },
+        "rdfs:comment": "The category or type of the credential (e.g., License, Certificate, Degree).",
+        "rdfs:label": "credentialCategory"
+      },
+      {
+        "@id": "http://example.com/hsml#usageRestriction",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "schema:rangeIncludes": {
+          "@id": "https://schema.org/Text"
+        },
+        "rdfs:comment": "Describes any restrictions on how or where the credential can be used (e.g., Valid only in the EU).",
+        "rdfs:label": "usageRestriction"
+      },
+      {
+        "@id": "http://example.com/hsml#canAccess",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ],
+        "rdfs:comment": "Specifies the organization(s) or person(s) that are authorized to access this domain.",
+        "rdfs:label": "canAccess"
+      },
+      {
+        "@id": "http://example.com/hsml#coordinateSystem",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "schema:rangeIncludes": {
+          "@id": "https://schema.org/Text"
+        },
+        "rdfs:comment": "Specifies the type of coordinate system used in the domain (e.g., Cartesian, Spherical, Geodetic).",
+        "rdfs:label": "coordinateSystem"
+      },
+      {
+        "@id": "http://example.com/hsml#requiresCredential",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Credential"
+        },
+        "rdfs:comment": "Indicates the Credential required to access or interact with this domain.",
+        "rdfs:label": "requiresCredential"
+      },
+      {
+        "@id": "http://example.com/hsml#platform",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://schema.org/Text"
+          },
+          {
+            "@id": "http://schema.org/URL"
+          }
+        ],
+        "rdfs:comment": "The name or identifier of the software platform or system to which the item belongs (e.g., Omniverse, Unreal, Unity).",
+        "rdfs:label": "platform"
+      },
+      {
+        "@id": "http://example.com/hsml#spaceLocation",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "rdfs:comment": "The space or environment where the domain exists or operates (e.g., Moon, Earth, Mars Orbit).",
+        "rdfs:label": "spaceLocation"
+      },
+      {
+        "@id": "http://example.com/hsml#specification",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "Describes the specifications, standards, or rules that define this domain.",
+        "rdfs:label": "specification"
+      },
+      {
+        "@id": "http://example.com/hsml#volume",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/PropertyValue"
+        },
+        "rdfs:comment": "The measure of the 3D volume of an entity defined by its  length, width and height dimensions.",
+        "rdfs:label": "volume"
+      },
+      {
+        "@id": "http://example.com/hsml#containDomain",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "rdfs:comment": "A list of domains (e.g., areas or subspaces) within this hyperspace, which could be physical or virtual.",
+        "rdfs:label": "containDomain"
+      },
+      {
+        "@id": "http://example.com/hsml#location",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://schema.org/Text"
+          },
+          {
+            "@id": "http://schema.org/URL"
+          }
+        ],
+        "rdfs:comment": "The geographical or virtual location of the hyperspace (e.g., latitude/longitude or virtual coordinates).",
+        "rdfs:label": "location"
+      },
+      {
+        "@id": "http://example.com/hsml#position",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/PropertyValue"
+        },
+        "rdfs:comment": "The point's location relative to a reference origin within a 3-dimensional space, defined in x,y,z coordinates.",
+        "rdfs:label": "position"
+      },
+      {
+        "@id": "http://example.com/hsml#relatedSpaces",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "rdfs:comment": "Other spaces that are related to this hyperspace, possibly through transformations or relations.",
+        "rdfs:label": "relatedSpaces"
+      },
+      {
+        "@id": "http://example.com/hsml#rotation",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/PropertyValue"
+        },
+        "rdfs:comment": "The orientation of an entity in hyperspace defined with the x, y, z coordinates.",
+        "rdfs:label": "rotation"
+      },
+      {
+        "@id": "http://example.com/hsml#spaceType",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Activity"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Text"
+        },
+        "rdfs:comment": "The type of space this hyperspace represents (e.g., Geographic, Graph, Virtual, Cellular).",
+        "rdfs:label": "spaceType"
+      },
+      {
+        "@id": "http://example.com/hsml#transform",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Hyperspace"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#PropertyValue"
+        },
+        "rdfs:comment": "The transform of a space to a different coordinate system by specifying its Position + Rotation + Scale.",
+        "rdfs:label": "transform"
+      },
+      {
+        "@id": "http://example.com/hsml#owner",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Thing"
+        },
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ],
+        "rdfs:comment": "To specify the person or organization that has ownership over the object.",
+        "rdfs:label": "owner"
+      },
+      {
+        "@id": "http://example.com/hsml#usedByDomain",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Thing"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "rdfs:comment": "To specify the Domain/-s that use this object.",
+        "rdfs:label": "usedByDomain"
+      },
+      {
+        "@id": "http://example.com/hsml#date",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Date"
+        },
+        "rdfs:comment": "Represents a specific date. Can be a timestamp (Number), a date string (Text), or an array of date parts.",
+        "rdfs:label": "date"
+      },
+      {
+        "@id": "http://example.com/hsml#day",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": [
+          {
+          "@id": "http://schema.org/Number"
+          },
+          {
+            "@id": "http://schema.org/Text"
+          }
+        ],
+        "rdfs:comment": "Day of the month (1-31) or day of the week (e.g., Monday).",
+        "rdfs:label": "day"
+      },
+      {
+        "@id": "http://example.com/hsml#hour",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "rdfs:comment": "Represents the hour of the day (0-23 or 1-12, depending on format).",
+        "rdfs:label": "hour"
+      },
+      {
+        "@id": "http://example.com/hsml#minute",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "rdfs:comment": "Represents the minute of an hour (0-59).",
+        "rdfs:label": "minute"
+      },
+      {
+        "@id": "http://example.com/hsml#month",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": [
+          {
+          "@id": "http://schema.org/Number"
+          },
+          {
+            "@id": "http://schema.org/Text"
+          }
+        ],
+        "rdfs:comment": "Represents the month of the year (1-12) or the month's name (e.g., January).",
+        "rdfs:label": "month"
+      },
+      {
+        "@id": "http://example.com/hsml#second",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "rdfs:comment": "Represents the second of a minute (0-59).",
+        "rdfs:label": "second"
+      },
+      {
+        "@id": "http://example.com/hsml#year",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Time"
+          }
+        ],
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/Number"
+        },
+        "rdfs:comment": "Represents the year (e.g., 2024).",
+        "rdfs:label": "year"
+      }
+    ]
+  }
+  
