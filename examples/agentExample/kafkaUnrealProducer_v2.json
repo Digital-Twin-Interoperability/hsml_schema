@@ -1,0 +1,66 @@
+{
+	"@context": "https://www.dropbox.com/scl/fi/fxyex9ndqp05316jyfexn/hsml.jsonld?rlkey=tmsoqgidjcfe4f4oa736tisfr&st=otxp4cck&dl=1",
+	"@type": "Agent",
+	"name": "unrealActor",
+	"swid": "did:key:6MkjhYSEVgRNUkkPSo871xSCDqMpSqeq7QhuN3vT9Hch5bw",
+	"url": "objectLink",
+	"creator":
+	{
+		"@type": "Person",
+		"name": "Jared Carrillo"
+	},
+	"dateCreated": "11-12-23",
+	"dateModified": "12-05-24",
+	"encodingFormat": "application/x-obj",
+	"contentUrl": "https://example.com/models/3dmodel-001.obj",
+	"platform": "Unreal Engine",
+	"spaceLocation":[
+		{
+			"@type": "Hyperspace",
+			"name": "Moon",
+			"id": "did:example:Hyperspace123"
+		}
+	],
+	"description": "Unreal engine object",
+	"position": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "xCoordinate",
+			"value": 12.625861403042126
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "yCoordinate",
+			"value": 4.0042406858753523
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "zCoordinate",
+			"value": -0.046607494691424937
+		}
+	],
+	"rotation": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "rx",
+			"value": -0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "ry",
+			"value": 0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "rz",
+			"value": -0.35816406644629328
+		}
+	],
+	"additionalProperty": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "w",
+			"value": 0.93365866434508882
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+    "@context": "https://www.dropbox.com/scl/fi/fxyex9ndqp05316jyfexn/hsml.jsonld?rlkey=tmsoqgidjcfe4f4oa736tisfr&st=otxp4cck&dl=1",
+    "@type": "Agent",
+    "name": "Unity_Viper_Frame",
+    "swid": "did:key:6MkhEaxoTmaXgn5QfHu2RHM9Lvn24UUpMSvH9BSyxY86Eq6",
+    "url": "objectLink",
+    "creator": {
+      "@type": "Person",
+      "name": "Your Name"
+    },
+    "dateCreated": "2024-12-04",
+    "dateModified": "2024-12-04",
+    "encodingFormat": "application/x-obj",
+    "contentUrl": "https://example.com/models/3dmodel-001.obj",
+    "description": "Continuous game object data with full schema",
+    "platform": "Unreal Engine",
+    "spaceLocation": [
+      {
+        "@type": "Hyperspace",
+        "name": "Moon",
+        "id": "did:example:Hyperspace123"
+      }
+    ],
+    "position": [
+      {
+        "@type": "schema:PropertyValue",
+        "name": "xCoordinate",
+        "value": -4.49597073
+      },
+      {
+        "@type": "schema:PropertyValue",
+        "name": "yCoordinate",
+        "value":  -0.42696523
+      },
+      {
+        "@type": "schema:PropertyValue",
+        "name": "zCoordinate",
+        "value": -6.135555
+      }
+    ],
+    "rotation": [
+      {
+        "@type": "schema:PropertyValue",
+        "name": "rx",
+        "value": -0.234210357
+      },
+      {
+        "@type": "schema:PropertyValue",
+        "name": "ry",
+        "value": 0.258375823
+      },
+      {
+        "@type": "schema:PropertyValue",
+        "name": "rz",
+        "value": 0.62788707
+      }
+    ],
+    "additionalProperty": [
+      {
+        "@type": "schema:PropertyValue",
+        "name": "w",
+        "value": 0.62788707
+      }
+    ]
+  }
