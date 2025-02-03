@@ -1,5 +1,5 @@
 {
-	"@context": "https://www.dropbox.com/scl/fi/fxyex9ndqp05316jyfexn/hsml.jsonld?rlkey=tmsoqgidjcfe4f4oa736tisfr&st=otxp4cck&dl=1",
+	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
 	"@type": "Agent",
 	"name": "unrealActor",
 	"swid": "did:key:6MkjhYSEVgRNUkkPSo871xSCDqMpSqeq7QhuN3vT9Hch5bw",

@@ -1,5 +1,5 @@
 {
-  "@context": "https://www.dropbox.com/scl/fi/fxyex9ndqp05316jyfexn/hsml.jsonld?rlkey=tmsoqgidjcfe4f4oa736tisfr&st=otxp4cck&dl=1",
+  "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
   "@type": "Person",
   "name": "Alicia Sanjurjo",
   "swid": "did:key:6MkidQN81VTZgwTrS9kCsfJ4EJX67ux2qsVhPpUTNoRWqm2",
