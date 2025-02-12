@@ -393,9 +393,631 @@
         }
       },
       {
+        "@id": "schema:mainEntityOfPage",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:potentialAction",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Activity"
+      },
+      {
+        "@id": "schema:subjectOf",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },        
+          {
+            "@id": "http://example.com/hsml#Activity"
+          }
+        ]
+      },
+      {
+        "@id": "schema:error",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:instrument",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Thing"
+      },
+      {
+        "@id": "schema:location",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:object",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Entity"
+          },        
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ]
+      },
+      {
+        "@id": "schema:participant",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:provider",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:result",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:areaServed",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Geographic"
+      },
+      {
+        "@id": "schema:about",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
         "@id": "schema:creator",
         "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:hasPart",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Domain"
+      },
+      {
+        "@id": "schema:isPartOf",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Agent"
+      },
+      {
+        "@id": "schema:mainEntity",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:isRelatedTo",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ]
+      },
+      {
+        "@id": "schema:provider",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:serviceOutput",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:issuedBy",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:issuedThrough",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Contract"
+      },
+      {
+        "@id": "schema:accountablePerson",
+        "@type": "rdf:Property",
         "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:author",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:contentLocation",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:contributor",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:copyrightHolder",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:editor",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:funder",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:isBasedOn",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Domain"
+      },
+      {
+        "@id": "schema:isPartOf",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Domain"
+      },
+      {
+        "@id": "schema:keywords",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Concept"
+      },
+      {
+        "@id": "schema:license",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Domain"
+      },
+      {
+        "@id": "schema:locationCreated",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:maintainer",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:material",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Thing"
+      },
+      {
+        "@id": "schema:producer",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:provider",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:publisher",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:sdPublisher",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:size",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Concept"
+      },
+      {
+        "@id": "schema:sourceOrganization",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:spatial",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:spatialCoverage",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:sponsor",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:ineligibleRegion",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:productionCompany",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:regionsAllowed",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:alumni",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:brand",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:department",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:employee",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:founder",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:funder",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:foundingLocation",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:hasPOS",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Geographic"
+          },        
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ]
+      },
+      {
+        "@id": "schema:knowsAbout",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Entity"
+      },
+      {
+        "@id": "schema:member",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:memberOf",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:owns",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Agent"
+          },        
+          {
+            "@id": "http://example.com/hsml#Thing"
+          }
+        ]
+      },
+      {
+        "@id": "schema:parentOrganization",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:skills",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Concept"
+      },
+      {
+        "@id": "schema:sponsor",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
+      },
+      {
+        "@id": "schema:subOrganization",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:affiliation",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:alumniOf",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:birthPlace",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Geographic"
+      },
+      {
+        "@id": "schema:brand",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:children",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:colleague",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:deathPlace",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Geographic"
+      },
+      {
+        "@id": "schema:follows",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:homeLocation",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Geographic"
+      },
+      {
+        "@id": "schema:jobTitle",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Concept"
+      },
+      {
+        "@id": "schema:knows",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:parent",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:relatedTo",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:sibling",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:skills",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Concept"
+      },
+      {
+        "@id": "schema:spouse",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Person"
+      },
+      {
+        "@id": "schema:workLocation",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Geographic"
+      },
+      {
+        "@id": "schema:worksFor",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+      },
+      {
+        "@id": "schema:manufacturer",
+        "@type": "rdf:Property",
+        "schema:rangeIncludes": "http://example.com/hsml#Organization"
       },
       {
         "@id": "http://example.com/hsml#linkedTo",
