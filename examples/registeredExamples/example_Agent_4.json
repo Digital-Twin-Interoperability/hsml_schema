@@ -1,0 +1,59 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Agent",
+    "name": "example Agent 4",
+    "swid": "did:key:6MkhaP2tuJVTJQ16Xna4yqXn9hD3a32ermE82niVS4kF2t1",
+    "url": "objectLink",
+    "creator": {
+        "@type": "Person",
+        "name": "Alicia Sanjurjo",
+        "swid": "did:key:6MktmNuF2PjyfLHd1pTKsu62ZPAMamzmGu6S2byfHUog2EA"
+    },
+    "dateCreated": "11-12-23",
+    "dateModified": "12-05-24",
+    "encodingFormat": "application/x-obj",
+    "contentUrl": "https://example.com/models/3dmodel-001.obj",
+    "platform": "Omniverse",
+    "description": "Omniverse example object",
+    "position": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "xCoordinate",
+            "value": 12.625861403042126
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "yCoordinate",
+            "value": 4.004240685875352
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "zCoordinate",
+            "value": -0.04660749469142494
+        }
+    ],
+    "rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": 0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": 0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": -0.3581640664462933
+        }
+    ],
+    "additionalProperty": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "w",
+            "value": 0.9336586643450888
+        }
+    ]
+}

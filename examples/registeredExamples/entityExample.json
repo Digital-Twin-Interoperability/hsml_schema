@@ -1,0 +1,7 @@
+{
+  "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+  "@type": "Entity",
+  "name": "Example Entity",
+  "description": "This is an example entity type.",
+  "swid": "did:key:6MkigaVeSdratxNyXCGPKqipUCid2BzroGZZQGq7i5ABc5W"
+}
