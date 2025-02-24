@@ -546,7 +546,14 @@
       {
         "@id": "schema:issuedBy",
         "@type": "rdf:Property",
-        "schema:rangeIncludes": "http://example.com/hsml#Organization"
+        "schema:rangeIncludes": [
+          {
+            "@id": "http://example.com/hsml#Organization"
+          },        
+          {
+            "@id": "http://example.com/hsml#Person"
+          }
+        ]
       },
       {
         "@id": "schema:issuedThrough",
