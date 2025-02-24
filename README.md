@@ -14,4 +14,8 @@ This repository contains the HSML Schema context, among other codes needed to bu
 - **`hsml-context/`**: Contains the hsml.jsonld context file that defines the classes and properties needed.
 - **`presentations/`**: Contains the Weekly Presentations by Alicia Sanjurjo.
 - **`scripts/`**: Contains Python scripts developed for the Verification and to test with the Kafka server.
+<<<<<<< HEAD
 - **`swid_generator/`**: Contains the Python CLI tool used to generate the public & private key pair for the DID:key method.
+=======
+- **`swid_generator/`**: Contains the Python CLI tool used to generate the public & private key pair for the DID:key method.
+>>>>>>> e6f89e4f32bf5b5116bd93f73673e46fa508db51
