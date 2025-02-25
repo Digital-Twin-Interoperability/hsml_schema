@@ -1,0 +1,25 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Person",
+    "name": "Harry Potter",
+    "swid": "did:key:6MkpdtsPAH7ucaeqDYTcuVd5fYHnX1RBs6u565tPav5PZY6",
+    "jobTitle": "Wizard",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Hogwarts"
+    },
+    "affiliation": {
+        "@type": "schema:ProgramMembership",
+        "name": "Wizardry School"
+    },
+    "owns": {
+        "@type": "schema:Product",
+        "name": "3D Model Collection",
+        "hasPart": {
+            "@type": "schema:CreativeWork",
+            "name": "Alohomora"
+        }
+    },
+    "birthDate": "1980-07-31",
+    "email": "harry.potter@hogwarts.es"
+}

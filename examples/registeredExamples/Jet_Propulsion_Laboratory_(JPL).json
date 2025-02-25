@@ -1,0 +1,45 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Organization",
+    "name": "Jet Propulsion Laboratory (JPL)",
+    "alternateName": "NASA JPL",
+    "swid": "did:key:6MksFWyjUieQqE98EfS5NNUj7TBWGFdyeGb1beoTNXHT5je",
+    "description": "A research and development center funded by NASA and managed by the California Institute of Technology, specializing in robotic space exploration.",
+    "url": "https://www.jpl.nasa.gov",
+    "logo": "https://en.m.wikipedia.org/wiki/File:Jet_Propulsion_Laboratory_logo.svg",
+    "address": {
+        "@type": "schema:PostalAddress",
+        "streetAddress": "4800 Oak Grove Drive",
+        "addressLocality": "Pasadena",
+        "addressRegion": "California",
+        "postalCode": "91109",
+        "addressCountry": "US"
+    },
+    "telephone": "+1-818-354-4321",
+    "email": "info@jpl.nasa.gov",
+    "foundingDate": "1936-10-31",
+    "parentOrganization": {
+        "@type": "Organization",
+        "name": "California Institute of Technology (Caltech)",
+        "url": "https://www.caltech.edu"
+    },
+    "employees": [
+        {
+            "@type": "Person",
+            "name": "Laurie Leshin",
+            "jobTitle": "Director",
+            "sameAs": "https://www.jpl.nasa.gov/people/laurie-leshin"
+        }
+    ],
+    "areaServed": "Global",
+    "department": [
+        {
+            "@type": "Organization",
+            "name": "Flight Electronics"
+        }
+    ],
+    "sameAs": [
+        "https://www.facebook.com/NASAJPL",
+        "https://www.instagram.com/nasajpl/"
+    ]
+}
