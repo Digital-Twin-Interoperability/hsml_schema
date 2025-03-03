@@ -2,7 +2,7 @@
 	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
 	"@type": "Agent",
 	"name": "example Agent 2",
-	"swid": "did:key:6MkjhYSEVgRNUkkPSo871xSCDqMpSqeq7QhuN3vT9Hch5bw",
+	"swid": "did:key:6Mkq47kEVpasYSLxc2DM1951tSw2hPQyT7nhdVrnT6YawM5",
 	"url": "objectLink",
 	"creator":
 	{

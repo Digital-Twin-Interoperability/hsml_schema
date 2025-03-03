@@ -2,7 +2,7 @@
     "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
     "@type": "Person",
     "name": "Alicia Sanjurjo",
-    "swid": "did:key:6MktmNuF2PjyfLHd1pTKsu62ZPAMamzmGu6S2byfHUog2EA",
+    "swid": "did:key:6MkuK5ofqxNn6pnQwZhDoHRaPveUudGbrGZh6Zmb6ixhBGz",
     "jobTitle": "Intern",
     "worksFor": {
         "@type": "Organization",

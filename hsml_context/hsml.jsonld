@@ -1488,15 +1488,10 @@
         "schema:domainIncludes": {
           "@id": "http://example.com/hsml#Domain"
         },
-        "schema:rangeIncludes": [
-          {
-            "@id": "http://example.com/hsml#Organization"
-          },        
-          {
-            "@id": "http://example.com/hsml#Person"
-          }
-        ],
-        "rdfs:comment": "Specifies the organization(s) or person(s) that are authorized to access this domain.",
+        "schema:rangeIncludes": {
+          "@id": "http://example.com/hsml#Domain"
+        },
+        "rdfs:comment": "Specifies the Domain(s) (Agent, Organization, Person…) that are authorized to access this Domain.",
         "rdfs:label": "canAccess"
       },
       {

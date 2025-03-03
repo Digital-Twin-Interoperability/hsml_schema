@@ -1,0 +1,67 @@
+{
+	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+	"@type": "Agent",
+	"name": "example Agent 4",
+	"swid": "did:key:6MkhaP2tuJVTJQ16Xna4yqXn9hD3a32ermE82niVS4kF2t1",
+	"url": "objectLink",
+	"creator":
+	{
+		"@type": "Person",
+		"name": "Alicia Sanjurjo",
+		"swid": "did:key:6MkuK5ofqxNn6pnQwZhDoHRaPveUudGbrGZh6Zmb6ixhBGz"
+	},
+	"dateCreated": "11-12-23",
+	"dateModified": "12-05-24",
+	"encodingFormat": "application/x-obj",
+	"contentUrl": "https://example.com/models/3dmodel-001.obj",
+	"platform": "Omniverse",
+	"description": "Omniverse example object",
+	"canAccess": [
+		{
+			"@type": "Agent",
+			"name": "example Agent 2", 
+			"swid": "did:key:6Mkq47kEVpasYSLxc2DM1951tSw2hPQyT7nhdVrnT6YawM5"
+		}
+	],
+	"position": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "xCoordinate",
+			"value": 12.625861403042126
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "yCoordinate",
+			"value": 4.0042406858753523
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "zCoordinate",
+			"value": -0.046607494691424937
+		}
+	],
+	"rotation": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "rx",
+			"value": -0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "ry",
+			"value": 0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "rz",
+			"value": -0.35816406644629328
+		}
+	],
+	"additionalProperty": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "w",
+			"value": 0.93365866434508882
+		}
+	]
+}
