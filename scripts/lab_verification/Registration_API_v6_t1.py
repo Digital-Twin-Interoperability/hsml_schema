@@ -8,15 +8,15 @@ from CLItool import extract_did_from_private_key
 
 # Kafka Configuration
 KAFKA_CONFIG = {
-    "bootstrap.servers": "localhost:9092"
+    "bootstrap.servers": "192.168.1.55:9092"
 }
 admin_client = AdminClient(KAFKA_CONFIG)
 producer = Producer(KAFKA_CONFIG)
 
 # MySQL Database Configuration
 db_config = {
-    "host": "localhost",
-    "user": "root",
+    "host": "192.168.1.55",
+    "user": "labuser",
     "password": "MoonwalkerJPL85!",
     "database": "did_registry"
 }
@@ -135,7 +135,7 @@ def register_entity(json_file_path, output_directory, registered_by=None):
         "Person": ["name", "birthDate", "email"],
         "Agent": ["name", "creator", "dateCreated", "dateModified", "description"],
         "Credential": ["name", "description", "issuedBy", "accessAuthorization", "authorizedForDomain"],
-        "Organization": ["name", "description", "url","address", "logo", "foundingDate", "email"]
+        "Organization": ["name", "description", "url","address", "foundingDate", "email"]
     }
     
     if entity_type not in required_fields:
@@ -319,7 +319,7 @@ if __name__ == "__main__":
     if user_did is not None:
         json_file_path = input("Enter the directory to your HSML JSON to be registered: ")
         #output_directory = input("Enter the directory to save the private key and updated JSON: ")
-        output_directory = "C:/Users/abarrio/OneDrive - JPL/Desktop/Digital Twin Interoperability/Codes/HSML Examples/registeredExamples"
+        output_directory = "C:/Users/abarrio/OneDrive - JPL/Desktop/Digital Twin Interoperability/Codes/HSML codes/testing_lab_verification/registeredExamplesLabDB"
 
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
@@ -344,7 +344,7 @@ if __name__ == "__main__":
                 continue
             break
 
-        output_directory = "C:/Users/abarrio/OneDrive - JPL/Desktop/Digital Twin Interoperability/Codes/HSML Examples/registeredExamples"
+        output_directory = "C:/Users/abarrio/OneDrive - JPL/Desktop/Digital Twin Interoperability/Codes/HSML codes/testing_lab_verification/registeredExamplesLabDB"
 
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
