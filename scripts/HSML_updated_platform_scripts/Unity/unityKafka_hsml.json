@@ -1,0 +1,70 @@
+{
+	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Agent",
+	"name": "unrealActor",
+	"swid": "did:key:generate-Chassis-001",
+	"identifier":
+	{
+		"@type": "schema:PropertyValue",
+		"propertyID": "schema_id",
+		"value": "unrealActor-001"
+	},
+	"url": "objectLink",
+	"creator":
+	{
+		"@type": "Person",
+		"name": "Jared Carrillo"
+	},
+	"dateCreated": "2024-11-12", 
+	"dateModified": "2024-11-22",
+	"encodingFormat": "application/x-obj",
+	"contentUrl": "https://example.com/models/3dmodel-001.obj",
+	"description": "Unreal engine object",
+	"platform": "Unity",
+    "spaceLocation": [
+        {
+            "@type": "Hyperspace",
+            "name": "Moon"
+        }
+    ],
+	"additionalType": "https://schema.org/CreativeWork",
+	"position": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "xCoordinate",
+            "value": 1123.0240446072789
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "yCoordinate",
+            "value": -546.59693065593433
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "zCoordinate",
+            "value": 16.012852224930874
+        }
+    ],
+	"rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": -0.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": 0.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": -0.97613532309447293
+        },
+        {
+			"@type": "schema:PropertyValue",
+			"name": "w",
+			"value": 0.21716314375890108
+		}
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Agent",
+    "name": "Chassis",
+    "swid": "did:key:generate-Chassis-001",
+    "identifier": {
+        "@type": "schema:PropertyValue",
+        "propertyID": "schema_Chassis",
+        "value": "Chassis-001"
+    },
+    "url": "https://example.com/3dmodel",
+    "creator": {
+        "@type": "Person",
+        "name": "Jared Carrillo"
+    },
+    "dateCreated": "2024-01-01",
+    "dateModified": "2024-12-06T20:23:42",
+    "encodingFormat": "application/x-obj",
+    "contentUrl": "https://example.com/models/3dmodel-001.obj",
+    "description": "Rover data with world position and rotation",
+    "platform": "Unreal Engine",
+    "spaceLocation": [
+        {
+            "@type": "Hyperspace",
+            "name": "Moon"
+        }
+    ],
+    "additionalType": "https://schema.org/CreativeWork",
+    "position": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "xCoordinate",
+            "value": 6.295528888702394
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "yCoordinate",
+            "value": -1.2042644023895266
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "zCoordinate",
+            "value": -0.3365876972675321
+        }
+    ],
+    "rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": 0.024327908261823645
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": -0.047481498346450386
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": 0.9957622241120854
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "w",
+            "value": -0.07490829877746202
+        }
+    ]
+}

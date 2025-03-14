@@ -1,0 +1,75 @@
+{
+  "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+  "@type": "Agent",
+  "name": "Cadre_1",
+  "swid": "did:key:generate-Chassis-001",
+  "identifier": {
+    "@type": "schema:PropertyValue",
+    "propertyID": "schema_Chassis",
+    "value": "Chassis-001"
+  },
+  "url": "1hF_bUKvJWxV2SMVLj4wQ2Mg_vb_F9oKO",
+  "creator": {
+    "@type": "Person",
+    "name": "Jared Carrillo"
+  },
+  "dateCreated": "2024-01-01",
+  "dateModified": "2024-12-06T15:31:17",
+  "encodingFormat": "application/x-obj",
+  "contentUrl": "https://example.com/models/3dmodel-001.obj",
+  "description": "Rover data with world position and rotation",
+  "platform": "Omniverse",
+  "spaceLocation": [
+    {
+      "@type": "Hyperspace",
+      "name": "Moon"
+    }
+  ],
+  "additionalType": "https://schema.org/CreativeWork",
+  "position": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "xCoordinate",
+      "value": 9.182339668273928
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "yCoordinate",
+      "value": -7.23
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "zCoordinate",
+      "value": -0.5062984824180603
+    }
+  ],
+  "rotation": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "rx",
+      "value": -0.02488975564479701
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "ry",
+      "value": 0.05244587452827391
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "rz",
+      "value": -0.07314408341749085
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "w",
+      "value": 0.9956303899389182
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "scale",
+      "value": 0.01
+    }
+  ]
+}

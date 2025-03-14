@@ -1036,7 +1036,8 @@
           "@id": "http://example.com/hsml#Entity"
         },
         "rdfs:comment": "The schema of other entities to which this entity is connected.",
-        "rdfs:label": "linkedTo"
+        "rdfs:label": "linkedTo",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#swid",
@@ -1060,7 +1061,8 @@
           "@id": "http://example.com/hsml#Activity"
         },
         "rdfs:comment": "Used to indicate smaller activities that are instances of the current activity.",
-        "rdfs:label": "activityHasInstance"
+        "rdfs:label": "activityHasInstance",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#activityIsInstanceOf",
@@ -1181,7 +1183,8 @@
           "@id": "http://schema.org/Text"
         },
         "rdfs:comment": "Variables that define the activity performed.",
-        "rdfs:label": "openVariables"
+        "rdfs:label": "openVariables",
+        "@container":"@set"
       },      
       {
         "@id": "http://example.com/hsml#performedOn",
@@ -1203,6 +1206,18 @@
         "rdfs:comment": "The domain (whether geographic, a thing or an agent) on or in which the activity is performed.",
         "rdfs:label": "performedOn"
       },     
+      {
+        "@id": "http://example.com/hsml#inControl",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": {
+          "@id": "http://example.com/hsml#Agent"
+        },
+        "schema:rangeIncludes": {
+          "@id": "https://schema.org/Boolean"
+        },
+        "rdfs:comment": "Indicates if the Agent is in control of the physics simulation during the interaction with another Agent. Allowed values are true or false.",
+        "rdfs:label": "inControl"
+      },
       {
         "@id": "http://example.com/hsml#linkedActivity",
         "@type": "rdf:Property",
@@ -1237,7 +1252,8 @@
           "@id": "http://example.com/hsml#Entity"
         },
         "rdfs:comment": "The list of entities (e.g., agents, organizations) who have access to the channel.",
-        "rdfs:label": "access"
+        "rdfs:label": "access",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#channelStatus",
@@ -1297,7 +1313,8 @@
           "@id": "http://example.com/hsml#Activity"
         },
         "rdfs:comment": "The activity or activities that the channel is related to.",
-        "rdfs:label": "relatedActivity"
+        "rdfs:label": "relatedActivity",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#streamData",
@@ -1367,7 +1384,8 @@
           }        
         ],
         "rdfs:comment": "Parties involved in the Contract.",
-        "rdfs:label": "signedBy"
+        "rdfs:label": "signedBy",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#transferRightsTo",
@@ -1492,7 +1510,8 @@
           "@id": "http://example.com/hsml#Domain"
         },
         "rdfs:comment": "Specifies the Domain(s) (Agent, Organization, Person…) that are authorized to access this Domain.",
-        "rdfs:label": "canAccess"
+        "rdfs:label": "canAccess",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#coordinateSystem",
@@ -1579,7 +1598,8 @@
           "@id": "http://schema.org/PropertyValue"
         },
         "rdfs:comment": "The measure of the 3D volume of an entity defined by its  length, width and height dimensions.",
-        "rdfs:label": "volume"
+        "rdfs:label": "volume",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#containDomain",
@@ -1613,14 +1633,20 @@
       {
         "@id": "http://example.com/hsml#position",
         "@type": "rdf:Property",
-        "schema:domainIncludes": {
-          "@id": "http://example.com/hsml#Hyperspace"
-        },
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ],
         "schema:rangeIncludes": {
           "@id": "http://schema.org/PropertyValue"
         },
         "rdfs:comment": "The point's location relative to a reference origin within a 3-dimensional space, defined in x,y,z coordinates.",
-        "rdfs:label": "position"
+        "rdfs:label": "position",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#relatedSpaces",
@@ -1637,14 +1663,33 @@
       {
         "@id": "http://example.com/hsml#rotation",
         "@type": "rdf:Property",
-        "schema:domainIncludes": {
-          "@id": "http://example.com/hsml#Hyperspace"
-        },
+        "schema:domainIncludes": [
+          {
+            "@id": "http://example.com/hsml#Domain"
+          },
+          {
+            "@id": "http://example.com/hsml#Hyperspace"
+          }
+        ],
         "schema:rangeIncludes": {
           "@id": "http://schema.org/PropertyValue"
         },
         "rdfs:comment": "The orientation of an entity in hyperspace defined with the x, y, z coordinates.",
-        "rdfs:label": "rotation"
+        "rdfs:label": "rotation",
+        "@container":"@set"
+      },
+      {
+        "@id": "http://example.com/hsml#rotationWheels",
+        "@type": "rdf:Property",
+        "schema:domainIncludes":{
+            "@id": "http://example.com/hsml#Agent"
+        },
+        "schema:rangeIncludes": {
+          "@id": "http://schema.org/PropertyValue"
+        },
+        "rdfs:comment": "Set containing the orientation of the four wheels of a rover or similar object, defined as LF, LR, RF, RR.",
+        "rdfs:label": "rotationWheels",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#spaceType",
@@ -1697,7 +1742,8 @@
           "@id": "http://example.com/hsml#Domain"
         },
         "rdfs:comment": "To specify the Domain/-s that use this object.",
-        "rdfs:label": "usedByDomain"
+        "rdfs:label": "usedByDomain",
+        "@container":"@set"
       },
       {
         "@id": "http://example.com/hsml#date",
