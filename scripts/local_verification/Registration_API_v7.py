@@ -1,6 +1,8 @@
 import json
 import os
 import subprocess
+import random
+import string
 import mysql.connector
 from confluent_kafka.admin import AdminClient, NewTopic
 from confluent_kafka import Producer
@@ -37,6 +39,10 @@ def create_kafka_topic(topic_name, num_partitions=1, replication_factor=1):
             print(f"Kafka topic '{topic}' created successfully.")
         except Exception as e:
             print(f"Failed to create topic '{topic}': {e}")
+
+#Generate random string for Kafka Topic name (NEW - Niki)
+def generate_random_string(length=6):
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
 
 # Function to send a Kafka message
 def send_kafka_message(topic, message):
@@ -190,11 +196,21 @@ def register_entity(json_file_path, output_directory, registered_by=None):
         registered_by = did_key
 
     topic_name = None
+
     # Special case: If entity is an "Agent", create a Kafka topic
     if entity_type == "Agent":
-        topic_name = data["name"].replace(" ", "_").lower()
-        create_kafka_topic(topic_name)
-        send_kafka_message(topic_name, {"message": f"New Agent registered: {data['name']}"})
+        flagUniqueName = False
+        while flagUniqueName == False:
+            random_suffix = generate_random_string() # new
+            topic_name = f"{data["name"].replace(" ", "_").lower()}_{random_suffix}" # new
+            #topic_name = data["name"].replace(" ", "_").lower()
+            # Check the name generated does not already exist
+            cursor.execute("SELECT COUNT(*) FROM did_keys WHERE kafka_topic = %s", (topic_name,))
+            existing_topic = cursor.fetchone()
+            if existing_topic[0]==0:
+                flagUniqueName = True
+                create_kafka_topic(topic_name)
+                send_kafka_message(topic_name, {"message": f"New Agent registered: {data['name']}"})
 
 
     # Special case: If entity is a "Credential", more checks needed
