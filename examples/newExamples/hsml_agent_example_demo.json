@@ -1,0 +1,93 @@
+{
+  "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+  "@type": "Agent",
+  "name": "Viper",
+  "swid": "did:key:generateBeforeDemoWithRegistration",
+  "url": "1GBcmwJh2rQ4CSR3_CiDyF6oVdOxz6hLG",
+  "creator": {
+    "@type": "Person",
+    "name": "Your Name",
+    "swid": "did:key:personMustBeRegisteredBefore"
+  },
+  "dateCreated": "2024-12-06",
+  "dateModified": "2024-12-06",
+  "encodingFormat": "application/x-obj",
+  "contentUrl": "https://example.com/models/3dmodel-001.obj",
+  "description": "Continuous game object data with full schema",
+  "platform": "Omniverse",
+  "spaceLocation": [
+    {
+      "@type": "Hyperspace",
+      "name": "Moon"
+    }
+  ],
+  "inControl": true,
+  "position": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "xCoordinate",
+      "value": 8.603406
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "yCoordinate",
+      "value": -5.30137157
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "zCoordinate",
+      "value": -0.297959328
+    }
+  ],
+  "rotation": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "rx",
+      "value": -0.510001957
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "ry",
+      "value": -0.4819667
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "rz",
+      "value": -0.4926929
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "name": "w",
+      "value": 0.5146455
+    }
+  ],
+  "rotationWheels": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "LF",
+			"value": 45.0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "LR",
+			"value": 45.0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "RF",
+			"value": 45.0
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "RR",
+			"value": 45.0
+		}
+	],
+  "additionalProperty": [
+    {
+      "@type": "schema:PropertyValue",
+      "name": "scale",
+      "value": 100
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Person",
+    "name": "Ron Weasley",
+    "birthDate": "1980-03-01",
+    "email": "ron.weasley@hogwarts.edu",
+    "swid": "did:key:6Mkr5tL197VziQi8GmTXnRBaLjMDBLUAnv6DKJWqysrjgbT"
+}

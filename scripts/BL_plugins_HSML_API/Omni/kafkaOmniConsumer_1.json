@@ -1,0 +1,93 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Agent",
+    "name": "Unity_Viper_Frame",
+    "swid": "did:key:generateBeforeDemoWithRegistration",
+    "url": "1GBcmwJh2rQ4CSR3_CiDyF6oVdOxz6hLG",
+    "creator": {
+        "@type": "Person",
+        "name": "Jared Carrillo",
+        "swid": "did:key:personMustBeRegisteredBefore"
+    },
+    "dateCreated": "2025-03-20",
+    "dateModified": "2025-03-20",
+    "encodingFormat": "application/x-obj",
+    "contentUrl": "https://example.com/models/3dmodel-001.obj",
+    "description": "Continuous game object data with full schema",
+    "platform": "Omni",
+    "inControl": true,
+    "spaceLocation": [
+        {
+            "@type": "Hyperspace",
+            "name": "Moon"
+        }
+    ],
+    "position": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "xCoordinate",
+            "value": 8.556062
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "yCoordinate",
+            "value": -0.08142567
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "zCoordinate",
+            "value": 5.268248
+        }
+    ],
+    "rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": -0.5614091
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": 0.46137163
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": -0.5350851
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "w",
+            "value": -0.4308596
+        }
+    ],
+    "rotationWheels": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "LF",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "LR",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "RF",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "RR",
+            "value": 45.0
+        }
+    ],
+    "additionalProperty": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "scale",
+            "value": 100
+        }
+    ]
+}
