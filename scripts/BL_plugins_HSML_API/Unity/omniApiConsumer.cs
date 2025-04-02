@@ -5,11 +5,13 @@ using UnityEngine.Networking;
 using Newtonsoft.Json.Linq;
 using System.Collections.Concurrent;
 
-public class UnityHsmlConsumer : MonoBehaviour
+public class omniApiConsumer : MonoBehaviour
 {
     public string apiBaseUrl = "http://192.168.1.55:8000/consumer";
-    public string topic = "cadreA_new_topic";
-    public string privateKeyPath = "C:/Path/To/private_key_viperA.pem"; //Path to Producer Agent of Unity
+    public string topic = "cadre_a_qbnpru";
+    public string privateKeyPath = @"C:\Users\Moonwalker\Desktop\Unity_scripts\HSMLdemo\demoRegisteredEntities\private_key_Viper_A.pem"; //Path to Producer Agent of Unity
+
+
 
     private UnityEngine.Vector3 targetPosition;
     private UnityEngine.Quaternion targetRotation;
@@ -25,7 +27,7 @@ public class UnityHsmlConsumer : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
         // Process queued positions and rotations in the main thread
         while (positionQueue.TryDequeue(out UnityEngine.Vector3 newPosition))
         {
@@ -51,8 +53,9 @@ public class UnityHsmlConsumer : MonoBehaviour
         WWWForm authForm = new WWWForm();
         authForm.AddField("topic", topic);
         authForm.AddBinaryData("private_key", privateKeyBytes, "private_key.pem", "application/x-pem-file");
+        string authUrlWithTopic = $"{apiBaseUrl}/authorize?topic={Uri.EscapeDataString(topic)}";
 
-        using (UnityWebRequest authRequest = UnityWebRequest.Post($"{apiBaseUrl}/authorize", authForm))
+        using (UnityWebRequest authRequest = UnityWebRequest.Post(authUrlWithTopic, authForm)) //using (UnityWebRequest authRequest = UnityWebRequest.Post($"{apiBaseUrl}/authorize", authForm))
         {
             yield return authRequest.SendWebRequest();
 

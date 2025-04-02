@@ -8,17 +8,18 @@ using System.Numerics;
 using UnityEngine.Networking;
 using System.IO;
 
-public class UnityHsmlProducer : MonoBehaviour
+public class unityApiProducer : MonoBehaviour
 {
     private string hsmlApiUrl = "http://192.168.1.55:8000/producer/send-message";  // Update with your API
-    private string topic = "viperA_new_topic";
-    private string privateKeyPath = "C:/Path/To/private_key_viperA.pem";
+    private string apiBaseUrl = "http://192.168.1.55:8000/producer";
+    private string topic = "viper_a_0wawiy";
+    private string privateKeyPath = @"C:\Users\Moonwalker\Desktop\Unity_scripts\HSMLdemo\demoRegisteredEntities\private_key_Viper_A.pem";
     private UnityEngine.Vector3 lastPosition;
     private UnityEngine.Quaternion lastRotation;
     private bool isAuthenticated = false;
 
     void Start()
-    {   
+    {
         lastPosition = transform.position;
         lastRotation = transform.rotation;
         StartCoroutine(AuthenticateWithAPI());
@@ -117,10 +118,11 @@ public class UnityHsmlProducer : MonoBehaviour
         byte[] privateKeyData = System.IO.File.ReadAllBytes(privateKeyPath);
 
         WWWForm form = new WWWForm();
-        form.AddField("topic", topic);
         form.AddBinaryData("private_key", privateKeyData, "private_key.pem", "application/x-pem-file");
 
-        using (UnityWebRequest www = UnityWebRequest.Post($"{apiBaseUrl}/authenticate", form))
+        string authUrlWithTopic = $"{apiBaseUrl}/authenticate?topic={Uri.EscapeDataString(topic)}";
+
+        using (UnityWebRequest www = UnityWebRequest.Post(authUrlWithTopic, form))
         {
             yield return www.SendWebRequest();
 
@@ -137,25 +139,26 @@ public class UnityHsmlProducer : MonoBehaviour
         }
     }
 
+
     private IEnumerator SendMessageToAPI(JObject hsmlMessage)
     {
-        byte[] messageBytes = Encoding.UTF8.GetBytes(hsmlMessage.ToString());
-        WWWForm form = new WWWForm();
-        form.AddField("topic", topic);
-        form.AddBinaryData("message", messageBytes, "message.json", "application/json");
+        string jsonBody = hsmlMessage.ToString();
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
 
-        using (UnityWebRequest www = UnityWebRequest.Post($"{apiBaseUrl}/send-message", form))
+        UnityWebRequest www = new UnityWebRequest($"{apiBaseUrl}/send-message?topic={Uri.EscapeDataString(topic)}", "POST");
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
         {
-            yield return www.SendWebRequest();
-
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                Debug.LogError($"Message send failed: {www.error}");
-            }
-            else
-            {
-                Debug.Log("Message sent successfully.");
-            }
+            Debug.LogError($"Message send failed: {www.error} | {www.downloadHandler.text}");
+        }
+        else
+        {
+            Debug.Log("Message sent successfully.");
         }
     }
 }
