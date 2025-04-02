@@ -1,0 +1,72 @@
+{
+	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+	"@type": "Agent",
+	"name": "Cadre A",
+	"swid": "did:key:6MkpwzV9tEHwpxkadMdWGZdXdzQSKVyih4y1zVcA13Bv6K2",
+	"url": "objectLink",
+	"creator":
+	{
+		"@type": "Person",
+		"name": "Alicia Sanjurjo",
+		"swid": "did:key:6MktsGJxcNwZaC1vuimSYai7Zs9ykPwwrAfeVQtMLDU3nqQ"
+	},
+	"dateCreated": "2024-01-01",
+	"dateModified": "2024-04-01",
+	"encodingFormat": "application/x-obj",
+	"contentUrl": "https://example.com/models/3dmodel-001.obj",
+	"platform": "Omniverse",
+	"description": "Cadre A rover data with world position and rotation",
+	"inControl": false,
+	"spaceLocation": [
+		{
+			"@type": "Hyperspace",
+			"name": "Moon"
+		}
+	],
+	"position": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "xCoordinate",
+			"value": 13.043031692504886
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "yCoordinate",
+			"value": -4.502759933471679
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "zCoordinate",
+			"value": -0.8409436941146846
+		}
+	],
+	"rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": 0.02282672628615183
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": -0.05227862020732961
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": 0.995631635103779
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "w",
+            "value": -0.07391571968702297
+        }
+    ],
+    "additionalProperty": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "scale",
+            "value": 100
+        }
+    ]
+}

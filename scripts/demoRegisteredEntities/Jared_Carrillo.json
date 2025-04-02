@@ -1,0 +1,21 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Person",
+    "name": "Jared Carrillo",
+    "jobTitle": "Intern",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Jet Propulsion Laboratory (JPL)"
+    },
+    "owns": {
+        "@type": "schema:Product",
+        "name": "3D Model Collection",
+        "hasPart": {
+            "@type": "schema:CreativeWork",
+            "name": "Lunar Rover 3D Model"
+        }
+    },
+    "birthDate": "2001-12-15",
+    "email": "jared.carrillo.483@my.csun.edu",
+    "swid": "did:key:6Mkp93UhqQJK2beDME72yfmtmd6CKhjNjVuRFC7LeYQtN9S"
+}

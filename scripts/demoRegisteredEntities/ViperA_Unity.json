@@ -1,0 +1,94 @@
+{
+	"@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+	"@type": "Agent",
+	"name": "Viper A",
+	"swid": "did:key:6MkfqM9m882vjWv9ex9HkBQitUQWcCNw8KKfB5vEwRLGrFS",
+	"url": "objectLink",
+	"creator":
+	{
+		"@type": "Person",
+		"name": "Jared Carrillo",
+		"swid": "did:key:6Mkp93UhqQJK2beDME72yfmtmd6CKhjNjVuRFC7LeYQtN9S"
+	},
+	"dateCreated": "2024-01-01",
+	"dateModified": "2024-04-01",
+	"encodingFormat": "application/x-obj",
+	"contentUrl": "https://example.com/models/3dmodel-001.obj",
+	"platform": "Unity",
+	"description": "Viper A rover data with world position and rotation",
+	"inControl": true,
+	"spaceLocation": [
+		{
+			"@type": "Hyperspace",
+			"name": "Moon"
+		}
+	],
+	"position": [
+		{
+			"@type": "schema:PropertyValue",
+			"name": "xCoordinate",
+			"value": 8.556062
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "yCoordinate",
+			"value": -0.08142567
+		},
+		{
+			"@type": "schema:PropertyValue",
+			"name": "zCoordinate",
+			"value": 5.268248
+		}
+	],
+	"rotation": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rx",
+            "value": -0.5614091
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "ry",
+            "value": 0.46137163
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "rz",
+            "value": -0.5350851
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "w",
+            "value": -0.4308596
+        }
+    ],
+    "rotationWheels": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "LF",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "LR",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "RF",
+            "value": 45.0
+        },
+        {
+            "@type": "schema:PropertyValue",
+            "name": "RR",
+            "value": 45.0
+        }
+    ],
+    "additionalProperty": [
+        {
+            "@type": "schema:PropertyValue",
+            "name": "scale",
+            "value": 100
+        }
+    ]
+}

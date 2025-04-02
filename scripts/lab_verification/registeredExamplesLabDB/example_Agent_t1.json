@@ -1,0 +1,14 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Agent",
+    "name": "example Agent t1",
+    "creator": {
+      "@type": "Person",
+      "name": "Alicia Sanjurjo",
+      "swid": "did:key:6MktsGJxcNwZaC1vuimSYai7Zs9ykPwwrAfeVQtMLDU3nqQ"
+    },
+    "dateCreated": "2025-03-04",
+    "dateModified": "2025-03-13",
+    "description": "Test Agent with Registration",
+    "swid": "did:key:6Mkj5Yx4ppxCjf6PkQEfQz1PPu5pxMZXUy8LajLoEtYQntq"
+  }
