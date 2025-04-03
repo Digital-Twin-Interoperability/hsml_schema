@@ -9,12 +9,12 @@
         "name": "Jared Carrillo",
         "swid": "did:key:personMustBeRegisteredBefore"
     },
-    "dateCreated": "2025-03-20",
-    "dateModified": "2025-03-20",
+    "dateCreated": "2025-04-03",
+    "dateModified": "2025-04-03T18:45:14",
     "encodingFormat": "application/x-obj",
     "contentUrl": "https://example.com/models/3dmodel-001.obj",
-    "description": "Continuous game object data with full schema",
-    "platform": "Omni",
+    "description": "Unity simulation agent HSML",
+    "platform": "Unity",
     "inControl": true,
     "spaceLocation": [
         {
@@ -26,61 +26,39 @@
         {
             "@type": "schema:PropertyValue",
             "name": "xCoordinate",
-            "value": 8.556062
+            "value": -1.14419329
         },
         {
             "@type": "schema:PropertyValue",
             "name": "yCoordinate",
-            "value": -0.08142567
+            "value": -1.488699
         },
         {
             "@type": "schema:PropertyValue",
             "name": "zCoordinate",
-            "value": 5.268248
+            "value": -20.9130344
         }
     ],
     "rotation": [
         {
             "@type": "schema:PropertyValue",
             "name": "rx",
-            "value": -0.5614091
+            "value": -0.6725448
         },
         {
             "@type": "schema:PropertyValue",
             "name": "ry",
-            "value": 0.46137163
+            "value": -0.1782622
         },
         {
             "@type": "schema:PropertyValue",
             "name": "rz",
-            "value": -0.5350851
+            "value": -0.6925959
         },
         {
             "@type": "schema:PropertyValue",
             "name": "w",
-            "value": -0.4308596
-        }
-    ],
-    "rotationWheels": [
-        {
-            "@type": "schema:PropertyValue",
-            "name": "LF",
-            "value": 45.0
-        },
-        {
-            "@type": "schema:PropertyValue",
-            "name": "LR",
-            "value": 45.0
-        },
-        {
-            "@type": "schema:PropertyValue",
-            "name": "RF",
-            "value": 45.0
-        },
-        {
-            "@type": "schema:PropertyValue",
-            "name": "RR",
-            "value": 45.0
+            "value": 0.190307483
         }
     ],
     "additionalProperty": [

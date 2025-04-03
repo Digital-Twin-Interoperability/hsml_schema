@@ -25,7 +25,7 @@ class FileReaderScript(BehaviorScript):
             print(f"Error: Prim at {prim_path} is not a valid Xform.")
             return
 
-        self.file_path = r"C:\Users\Jared\Desktop\kafkaOmniConsumer_1.json"
+        self.file_path = r"/home/luke-cortez/dt_interoperability/Omni_scripts/HSMLdemo/kafkaOmniConsumer_1.json"
         print(f"Script initialized. Watching file: {self.file_path}")
 
     def on_update(self, current_time: float, delta_time: float):

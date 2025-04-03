@@ -9,8 +9,8 @@ import requests
 API_URL = "http://192.168.1.55:8000/producer"
 
 # Request data
-private_key_path = "PATH/TO/private_key_CadreA.pem"
-topic = "cadreA_new_topic"
+private_key_path = r"/home/luke-cortez/dt_interoperability/Omni_scripts/HSMLdemo/demoRegisteredEntities/private_key_Cadre_A.pem"
+topic = "cadre_a_qbnpru"
 
 # Dictionary to store the previous state for all tracked prims
 previous_states = {}
@@ -30,12 +30,12 @@ def send_full_message(schema_id, modelName, modelNumber, objectLink, creatorName
         "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
         "@type": "Agent",
         "name": modelName,
-        "swid": f"did:key:{schema_id}",
+        "swid": schema_id,
         "url": objectLink,
         "creator": {
             "@type": "Person",
             "name": creatorName,
-            "swid": "did:key:personMustBeRegisteredBefore"
+            "swid": "did:key:6MktsGJxcNwZaC1vuimSYai7Zs9ykPwwrAfeVQtMLDU3nqQ"
         },
         "dateCreated": creationDate,
         "dateModified": modifiedDate,
@@ -172,7 +172,8 @@ class OmniControls(BehaviorScript):
         # Iterate over all prims and send updates if state has changed
         for prim in self.prims:
             prim_name = prim.GetName()
-            schema_id = f"schema_{prim_name}"
+            #schema_id = f"schema_{prim_name}"
+            schema_id = "did:key:6MkpwzV9tEHwpxkadMdWGZdXdzQSKVyih4y1zVcA13Bv6K2"
             transform = self.get_transform(prim)
             position = [transform["translate"][0], transform["translate"][1], transform["translate"][2]]
             rotation = transform["rotation"]
@@ -184,7 +185,7 @@ class OmniControls(BehaviorScript):
                     modelName=prim_name,
                     modelNumber="001",
                     objectLink="https://example.com/3dmodel",
-                    creatorName="Jared Carrillo",
+                    creatorName="Alicia Sanjurjo",
                     creationDate="2024-01-01",
                     modifiedDate=datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
                     position=position,

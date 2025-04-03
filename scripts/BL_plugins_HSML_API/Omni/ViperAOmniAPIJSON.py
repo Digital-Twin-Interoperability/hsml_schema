@@ -6,9 +6,9 @@ import time
 API_URL = "http://192.168.1.55:8000/consumer"
 
 # Paths and topic
-private_key_path = "PATH/TO/private_key_CadreA.pem" # Key of the Producer Agent of Omniverse
-topic = "viperA_new_topic"
-output_file_path = "C:/Users/Jared/Desktop/kafkaOmniConsumer_1.json"
+private_key_path = r"/home/luke-cortez/dt_interoperability/Omni_scripts/HSMLdemo/demoRegisteredEntities/private_key_Cadre_A.pem" # Key of the Producer Agent of Omniverse
+topic = "viper_a_0wawiy"
+output_file_path = r"/home/luke-cortez/dt_interoperability/Omni_scripts/HSMLdemo/kafkaOmniConsumer_1.json"
 
 # Step 0: Read private key
 try:
