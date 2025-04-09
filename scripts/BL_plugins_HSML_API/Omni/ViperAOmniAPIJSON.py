@@ -43,7 +43,7 @@ try:
         else:
             print("No new message yet or error fetching.")
 
-        time.sleep(1)  # Poll every second
+        time.sleep(0.01)  # Poll every 10 milliseconds
 except KeyboardInterrupt:
     print("Stopped by user.")
 

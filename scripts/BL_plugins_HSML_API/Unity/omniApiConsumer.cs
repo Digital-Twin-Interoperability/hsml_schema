@@ -110,7 +110,7 @@ public class omniApiConsumer : MonoBehaviour
                     }
                 }
 
-                yield return new WaitForSeconds(0.1f); // 100ms polling interval
+                yield return new WaitForSeconds(0.001f); // 1ms polling interval
             }
         }
     }
