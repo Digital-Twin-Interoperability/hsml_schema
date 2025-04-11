@@ -1,0 +1,25 @@
+{
+    "@context": "https://digital-twin-interoperability.github.io/hsml-schema-context/hsml.jsonld",
+    "@type": "Channel",
+    "name": "Feedback Channel for Cadre A and Viper A",
+    "swid": "did:key:6MkfEe4cTUbgQm47SRYBZ61KQSiobVdbQ2r7zFL13jtYD7t",
+    "description": "This channel allows the replica of Cadre A (in Unity) to send data back to the original Cadre A (in Omniverse)",
+    "access": [
+        {
+            "@type": "Agent",
+            "name": "Viper A",
+            "swid": "did:key:6MkfqM9m882vjWv9ex9HkBQitUQWcCNw8KKfB5vEwRLGrFS"
+        },
+        {
+            "@type": "Agent",
+            "name": "Cadre A",
+            "swid": "did:key:6MkpwzV9tEHwpxkadMdWGZdXdzQSKVyih4y1zVcA13Bv6K2"
+        }
+    ],
+    "channelStatus": "active",
+    "relatedActivity": {
+        "@type": "Activity",
+        "name": "Lunar Rovers Collaboration"
+    },
+    "contentType": "HSML JSON"
+}

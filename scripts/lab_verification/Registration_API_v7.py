@@ -141,7 +141,8 @@ def register_entity(json_file_path, output_directory, registered_by=None):
         "Person": ["name", "birthDate", "email"],
         "Agent": ["name", "creator", "dateCreated", "dateModified", "description"],
         "Credential": ["name", "description", "issuedBy", "accessAuthorization", "authorizedForDomain"],
-        "Organization": ["name", "description", "url","address", "foundingDate", "email"]
+        "Organization": ["name", "description", "url","address", "foundingDate", "email"],
+        "Channel": ["name", "description", "access"]
     }
     
     if entity_type not in required_fields:
