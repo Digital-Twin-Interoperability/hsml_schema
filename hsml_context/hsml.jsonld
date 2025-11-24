@@ -263,10 +263,34 @@
       "startDate":"schema:startDate",
 
       "propertyID": "schema:propertyID",
-      "value": "schema:value"
+      "value": "schema:value",
+
+      "inControl": "http://example.com/hsml#inControl",
+      "mass": "http://example.com/hsml#mass",
+      "massUnit": "http://example.com/hsml#massUnit"
+
     
     },
     "@graph": [
+      {
+        "@id": "http://example.com/hsml#mass",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": [
+          { "@id": "http://example.com/hsml#Agent" },
+          { "@id": "http://example.com/hsml#Thing" }
+        ],
+        "schema:rangeIncludes": { "@id": "http://schema.org/Number" },
+        "rdfs:comment": "Mass of the agent/thing in kilograms (kg).",
+        "rdfs:label": "mass"
+      },
+      {
+        "@id": "http://example.com/hsml#massUnit",
+        "@type": "rdf:Property",
+        "schema:domainIncludes": { "@id": "http://example.com/hsml#Entity" },
+        "schema:rangeIncludes": { "@id": "http://schema.org/Text" },
+        "rdfs:comment": "Unit for mass values; default 'kilogram'.",
+        "rdfs:label": "massUnit"
+      },
       {
         "@id": "http://example.com/hsml#Entity",
         "@type": "rdfs:Class",
